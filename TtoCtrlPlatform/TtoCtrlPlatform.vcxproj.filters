@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFeiSuYuan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MidPacketInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ModifyPassDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="png.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PskPrinter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskAndDeviceSetup.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskListHistoryDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TtoCtrlPlatform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TtoCtrlPlatformDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TtoJson.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TtoLogin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TtoParamConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteSimplePlaceDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Definition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFeiSuYuan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Lock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MidPacketInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ModifyPassDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="png.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PskPrinter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskAndDeviceSetup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskListHistoryDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TtoCtrlPlatform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TtoCtrlPlatformDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TtoJson.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TtoLogin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TtoParamConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteSimplePlaceDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap5.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\cd_bj.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\cx.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\dm_bj.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\fp.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\gx.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\h-sb.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\lg_login.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\lg_quit.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\login.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ls_bj.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\m-qd.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\m-qx.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\main.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\my.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\pz.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\pz_bj.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\qd.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\qrxg.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\quit.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\qx_btn.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sb.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sb_bj.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\small.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sy.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\syy.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\tc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\tj_btn.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\TtoCtrlPlatform.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\txm.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\txm_btn.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\xg.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\xg_bj.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\xyy.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\xz_btn.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\zb.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\zb_btn.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TtoCtrlPlatform.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TtoCtrlPlatform.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Code1Dialog.htm" />
+    <None Include="MidPacketInfo.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

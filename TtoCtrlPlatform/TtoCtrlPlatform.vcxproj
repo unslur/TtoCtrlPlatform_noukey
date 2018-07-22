@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{347256BD-5BAD-49E2-A91D-F9708B7DC526}</ProjectGuid>
+    <RootNamespace>TtoCtrlPlatform</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27130.2020</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\mysql\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\mysql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\mysql\include;D:\mysql50\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DB.cpp" />
+    <ClCompile Include="DlgFeiSuYuan.cpp" />
+    <ClCompile Include="Function.cpp" />
+    <ClCompile Include="MidPacketInfo.cpp" />
+    <ClCompile Include="ModifyPassDlg.cpp" />
+    <ClCompile Include="png.cpp" />
+    <ClCompile Include="PskPrinter.cpp" />
+    <ClCompile Include="Socket.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TaskAndDeviceSetup.cpp" />
+    <ClCompile Include="TaskListHistoryDialog.cpp" />
+    <ClCompile Include="TtoCtrlPlatform.cpp" />
+    <ClCompile Include="TtoCtrlPlatformDlg.cpp" />
+    <ClCompile Include="TtoJson.cpp" />
+    <ClCompile Include="TtoLogin.cpp" />
+    <ClCompile Include="TtoParamConfig.cpp" />
+    <ClCompile Include="WriteSimplePlaceDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DB.h" />
+    <ClInclude Include="Definition.h" />
+    <ClInclude Include="DlgFeiSuYuan.h" />
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="Lock.h" />
+    <ClInclude Include="MidPacketInfo.h" />
+    <ClInclude Include="ModifyPassDlg.h" />
+    <ClInclude Include="png.h" />
+    <ClInclude Include="PskPrinter.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Socket.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TaskAndDeviceSetup.h" />
+    <ClInclude Include="TaskListHistoryDialog.h" />
+    <ClInclude Include="TtoCtrlPlatform.h" />
+    <ClInclude Include="TtoCtrlPlatformDlg.h" />
+    <ClInclude Include="TtoJson.h" />
+    <ClInclude Include="TtoLogin.h" />
+    <ClInclude Include="TtoParamConfig.h" />
+    <ClInclude Include="WriteSimplePlaceDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\bitmap5.bmp" />
+    <Image Include="res\cd_bj.bmp" />
+    <Image Include="res\cx.bmp" />
+    <Image Include="res\dm_bj.bmp" />
+    <Image Include="res\fp.bmp" />
+    <Image Include="res\gx.bmp" />
+    <Image Include="res\h-sb.bmp" />
+    <Image Include="res\lg_login.bmp" />
+    <Image Include="res\lg_quit.bmp" />
+    <Image Include="res\login.bmp" />
+    <Image Include="res\ls_bj.bmp" />
+    <Image Include="res\m-qd.bmp" />
+    <Image Include="res\m-qx.bmp" />
+    <Image Include="res\main.bmp" />
+    <Image Include="res\my.bmp" />
+    <Image Include="res\pz.bmp" />
+    <Image Include="res\pz_bj.bmp" />
+    <Image Include="res\qd.bmp" />
+    <Image Include="res\qrxg.bmp" />
+    <Image Include="res\quit.bmp" />
+    <Image Include="res\qx_btn.bmp" />
+    <Image Include="res\sb.bmp" />
+    <Image Include="res\sb_bj.bmp" />
+    <Image Include="res\small.bmp" />
+    <Image Include="res\sy.bmp" />
+    <Image Include="res\syy.bmp" />
+    <Image Include="res\tc.bmp" />
+    <Image Include="res\tj_btn.bmp" />
+    <Image Include="res\TtoCtrlPlatform.ico" />
+    <Image Include="res\txm.bmp" />
+    <Image Include="res\txm_btn.bmp" />
+    <Image Include="res\xg.bmp" />
+    <Image Include="res\xg_bj.bmp" />
+    <Image Include="res\xyy.bmp" />
+    <Image Include="res\xz_btn.bmp" />
+    <Image Include="res\zb.bmp" />
+    <Image Include="res\zb_btn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TtoCtrlPlatform.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code1Dialog.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="MidPacketInfo.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\TtoCtrlPlatform.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="TtoCtrlPlatform.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

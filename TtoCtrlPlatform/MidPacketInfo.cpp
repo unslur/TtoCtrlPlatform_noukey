@@ -159,9 +159,10 @@ void CMidPacketInfo::OnBnClickedButtonPrint()
     int num = printv.size();
 	int index = 0;
 	char showBuf[64];
+	
 	for (list<string>::const_iterator iter = printv.begin();iter != printv.end(); ++iter )
 	{
-		allStr = allStr+"*CPC*ZYCZS"+(char *)iter->c_str()+"\n";
+		allStr = allStr+ "*CPC*ZYCZS" +(char *)iter->c_str()+"\n";
 		allStr = allStr + (char *)iter->c_str()+"\n";
 		allStr += midname+""+midweight+"g\n";
 		allStr += midsimplace+"\n";
